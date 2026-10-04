@@ -1,10 +1,10 @@
-# 配信アーカイブ検証室
+# にじさんじ配信アーカイブ検証室
 
-VTuber・配信者について検索で見かける話題を、元配信・本人SNS・公式発表などの公開資料まで遡って確認する非公式アーカイブです。
+にじさんじ所属VTuber・配信者について検索で見かける話題を、元配信・本人SNS・公式発表などの公開資料まで遡って確認する非公式アーカイブです。
 
 ## 公開URL
 
-[https://vtuberkenkyulab-cell.github.io/stream-archive-verification/](https://vtuberkenkyulab-cell.github.io/stream-archive-verification/)
+[https://vtuberkenkyulab-cell.github.io/](https://vtuberkenkyulab-cell.github.io/)
 
 ## サイトの構造
 
@@ -21,12 +21,22 @@ VTuber・配信者について検索で見かける話題を、元配信・本�
 1. `src/content/articles/` 内の既存記事を1つ複製します。
 2. ファイル名を、短い半角英数字とハイフンの名前に変更します。
 3. ファイル冒頭の `---` で囲まれた部分を更新します。
-4. `title`、`slug`、`person`、`personSlug`、`description`、3つの日付、`keyPoints`、`sources` を入力します。
+4. `title`、`slug`、`person`、`personSlug`、`description`、3つの日付、`keyPoints`、`verificationSummary`、`sources` を入力します。
 5. 本文を `---` より下へ書きます。
 6. 新しい人物の場合は `src/content/people/` に人物JSONも追加します。
 7. mainへ反映すると、自動チェック後に公開されます。
 
 必須情報が欠けている場合や、URL・日付の形式が違う場合は、公開前のチェックで止まります。
+
+### 記事冒頭のSEO項目
+
+- `title`：ページ本文のH1。読者向けの自然な見出しです。
+- `seoTitle`：Google検索結果、OGP、Twitterカード向けの短いタイトルです。省略時は`title`が使われます。
+- `description`：人物名、主な論点、確認に使った資料を自然な1〜2文で説明します。
+- `keyPoints`：調査結果を2〜5項目で先に示します。導入文ではなく、確認できた結論を書きます。
+- `verificationSummary`：論点・確認結果・主な根拠を対応させた「検証結果」表です。
+- `sources`：元配信、本人投稿、公式発表など、実際に確認したURLだけを記載します。
+- `relatedSlugs`：本文上の関係が自然な関連記事だけを指定します。
 
 ## 既存記事を修正する方法
 
@@ -61,13 +71,19 @@ corrections:
 
 ## Google Search Console
 
-1. Google Search Consoleを開きます。
-2. 「プロパティを追加」から「URLプレフィックス」を選び、公開URLを入力します。
-3. 所有権の確認方法で「HTMLタグ」を選びます。
-4. 表示された `<meta name="google-site-verification" content="...">` のうち、`content` の中身だけを取得します。
-5. GitHubリポジトリの Settings → Secrets and variables → Actions → Variables に `PUBLIC_GOOGLE_SITE_VERIFICATION` という名前で登録します。
-6. Actionsから再実行するか、mainへ変更を反映します。
-7. 所有権を確認後、Search Consoleの「サイトマップ」へ `sitemap-index.xml` を送信します。
+1. [Google Search Console](https://search.google.com/search-console/)を開きます。
+2. 左上のプロパティ選択欄から「プロパティを追加」を押します。
+3. 右側の「URLプレフィックス」を選び、`https://vtuberkenkyulab-cell.github.io/`を入力して「続行」を押します。
+4. 「その他の確認方法」にある「HTMLタグ」を開きます。
+5. 表示された`<meta name="google-site-verification" content="...">`から、`content`の引用符内にある確認値だけをコピーします。
+6. GitHubの`vtuberkenkyulab-cell.github.io`リポジトリを開き、`Settings` → `Secrets and variables` → `Actions` → `Variables` → `New repository variable`を押します。
+7. Nameへ`PUBLIC_GOOGLE_SITE_VERIFICATION`、Valueへコピーした確認値を入れて保存します。
+8. GitHubの`Actions` → `Deploy to GitHub Pages` → `Run workflow`を押して再デプロイします。
+9. Search Consoleへ戻り「確認」を押します。
+10. 左メニューの「サイトマップ」を開き、`sitemap-index.xml`を入力して送信します。
+11. 左メニュー上部の「URL検査」へ代表URLを貼り付け、「インデックス登録をリクエスト」を押します。
+
+最初のURL検査は、TOP、注目記事数件、一次資料が多い記事数件に絞ります。残りの記事はsitemapから発見されます。
 
 設定値は1か所だけで、すべてのページのheadへ反映されます。
 
@@ -79,6 +95,12 @@ corrections:
 - `GPTBot`：OpenAIの基盤モデル改善のために公開ページを利用するクローラー
 
 両者は用途が異なるため、別々の指定を置いています。
+
+人物別ページは、公開記事が1件以下の間は`noindex,follow`です。検索結果への重複掲載は避けつつ、記事へたどる内部リンクとして残します。公開記事が2件以上になれば自動的にindex対象になります。
+
+## OGP画像
+
+記事ごとに1200×630pxの文字ベース画像をビルド時に自動生成します。人物画像は使用しません。`og:image`、`twitter:image`、Article構造化データの`image`へ同じ絶対URLを設定します。
 
 ## 独自ドメインへ移行する方法
 

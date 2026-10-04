@@ -17,6 +17,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.PUBLIC_GOOGLE_SITE_VERIFICATION }}
+      PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL || 'https://vtuberkenkyulab-cell.github.io' }}
+      PUBLIC_BASE_PATH: ${{ vars.PUBLIC_BASE_PATH || '/' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5

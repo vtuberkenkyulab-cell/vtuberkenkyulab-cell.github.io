@@ -8,21 +8,33 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft)).so
 const featured = articles.filter((article) => article.data.featured).slice(0, 5);
 const recent = [...articles].sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf()).slice(0, 6);
 const people = await getCollection('people');
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: SITE_NAME,
-  description: SITE_DESCRIPTION,
-  url: new URL(sitePath('/'), Astro.site).href,
-  inLanguage: 'ja'
-};
+const siteUrl = new URL(sitePath('/'), Astro.site).href;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: siteUrl,
+    inLanguage: 'ja',
+    publisher: { '@id': `${siteUrl}#organization` }
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${siteUrl}#organization`,
+    name: SITE_NAME,
+    url: siteUrl,
+    description: SITE_DESCRIPTION
+  }
+];
 ---
 <BaseLayout jsonLd={jsonLd}>
   <section class="hero">
     <div class="container">
       <p class="eyebrow">非公式・公開資料ベース</p>
       <h1>検索で見かける話題を、元の情報まで遡って確認する。</h1>
-      <p class="lead">VTuber・配信者に関する話題を、元配信、本人SNS、公式発表、当事者発言などの公開資料と照らし合わせて整理しています。</p>
+      <p class="lead">にじさんじ所属VTuber・配信者に関する話題を、元配信、本人SNS、公式発表、当事者発言などの公開資料と照らし合わせて整理しています。</p>
     </div>
   </section>
 

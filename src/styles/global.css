@@ -66,6 +66,13 @@ h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: 0; max-width: 18ch; }
 .key-points { margin: 2rem 0; padding: 1.25rem 1.4rem; background: var(--soft); border-left: .25rem solid var(--accent); border-radius: 0 .5rem .5rem 0; }
 .key-points h2 { margin: 0 0 .6rem; font-size: 1.15rem; }
 .key-points ul { margin: 0; padding-left: 1.3rem; }
+.verification-summary { margin: 2rem 0 2.5rem; }
+.verification-summary h2 { margin-bottom: .8rem; font-size: 1.35rem; }
+.table-wrap { overflow-x: auto; }
+.verification-summary table { width: 100%; border-collapse: collapse; font-size: .94rem; }
+.verification-summary th, .verification-summary td { padding: .75rem; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.verification-summary thead th { background: var(--soft); }
+.verification-summary tbody th { width: 24%; color: var(--ink); }
 .prose { font-size: 1.04rem; }
 .prose h2 { margin: 3.2rem 0 1rem; padding-bottom: .45rem; border-bottom: 1px solid var(--line); font-size: 1.55rem; }
 .prose h3 { margin-top: 2.2rem; font-size: 1.25rem; }

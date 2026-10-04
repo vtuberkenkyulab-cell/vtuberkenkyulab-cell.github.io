@@ -12,9 +12,10 @@ interface Props { person: CollectionEntry<'people'>; articles: CollectionEntry<'
 const { person, articles } = Astro.props;
 const latest = [...articles].sort((a,b) => b.data.checkedAt.valueOf() - a.data.checkedAt.valueOf())[0];
 const canonical = new URL(sitePath(`/people/${person.data.slug}/`), Astro.site);
+const shouldNoindex = articles.length <= 1;
 const jsonLd = { '@context':'https://schema.org', '@type':'CollectionPage', name:`${person.data.name}の検証記事`, description:`${person.data.name}に関する本サイトの検証記事一覧です。`, url: canonical.href, inLanguage:'ja' };
 ---
-<BaseLayout title={`${person.data.name}の検証記事`} description={`${person.data.name}に関する本サイトの検証記事一覧です。`} canonical={canonical} jsonLd={jsonLd}>
+<BaseLayout title={`${person.data.name}の検証記事`} description={`${person.data.name}に関する本サイトの検証記事一覧です。`} canonical={canonical} jsonLd={jsonLd} noindex={shouldNoindex}>
   <header class="page-header"><div class="container"><p class="eyebrow">PERSON ARCHIVE</p><h1>{person.data.name}の検証記事</h1><p>本サイトに掲載している記事をまとめたハブです。公式プロフィールを模倣するものではありません。</p><div class="meta"><span>記事数 {articles.length}件</span>{latest && <span>最新確認日 {formatDate(latest.data.checkedAt)}</span>}</div></div></header>
   <section class="section container">{articles.length ? <div class="card-grid">{articles.map((article) => <ArticleCard article={article} />)}</div> : <p>現在、公開記事はありません。</p>}</section>
 </BaseLayout>

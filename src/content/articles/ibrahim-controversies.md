@@ -1,18 +1,37 @@
 ---
 title: "イブラヒムさんについて、「炎上」「失言」と検索される出来事を元情報まで調べた"
+seoTitle: "イブラヒムの炎上・失言・謝罪は何があった？元情報から検証"
 slug: "ibrahim-controversies"
 person: "イブラヒム"
 personSlug: "ibrahim"
-description: "イブラヒムさんについて検索すると、「炎上」「失言」「謝罪」などの言葉を含む記事が複数見つかります。 活動期間が長いこともあり、実際に本人が謝罪した出来事も確認できます。"
+description: "イブラヒムさんの「炎上」「失言」「謝罪」とされる出来事について、本人の謝罪、ANYCOLORの説明、元配信の確認状況を分けて整理した記事です。"
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
 keyPoints:
-  - "イブラヒムさんについて検索すると、「炎上」「失言」「謝罪」などの言葉を含む記事が複数見つかります。"
-  - "活動期間が長いこともあり、実際に本人が謝罪した出来事も確認できます。"
-  - "一方で、「イブラヒム 炎上」として紹介されているものの中には、本人よりも制作スタッフ側の問題だったケースや、元配信まで確認しにくい話も混ざっています。"
-  - "そこで今回は、資料の確度を分けながら調べました。"
-sources: []
+  - "2021年の「にじさんじのB級バラエティ」では、企業や出演者への配慮不足を本人が認めて謝罪しました。"
+  - "手越祐也さんとのVALORANT動画は、ANYCOLORが制作フロー上の問題を説明し、イブラヒムさんにも謝罪しています。"
+  - "過去の暴言として紹介される話の一部は、今回の調査で元配信まで確認できませんでした。"
+verificationSummary:
+  - topic: "にじバラでの態度"
+    result: "本人による謝罪を確認"
+    evidence: "本人発言・番組関連資料"
+  - topic: "手越祐也さんとの動画"
+    result: "制作フロー上の問題とANYCOLORの謝罪を確認"
+    evidence: "ANYCOLOR公式発表"
+  - topic: "過去の暴言"
+    result: "一部は元配信まで確認できず"
+    evidence: "公開資料を確認"
+relatedSlugs:
+  - "itsuki-sakyo-controversies"
+  - "sumera-reo-controversy"
+sources:
+  - title: "にじさんじ公式プロフィール"
+    url: "https://www.nijisanji.jp/talents/l/ibrahim"
+  - title: "ANYCOLOR公式 にじさんじのB級バラエティ開始告知"
+    url: "https://www.anycolor.co.jp/en/news/13359"
+  - title: "ANYCOLOR MAGAZINE にじバラ5周年座談会"
+    url: "https://magazine.anycolor.co.jp/articles/899806582"
 corrections: []
 featured: true
 displayOrder: 3
@@ -103,7 +122,7 @@ ANYCOLORは視聴者や手越さん側だけでなく、出演したイブラヒ
 
 元配信など信頼できる資料が確認できれば、評価を更新する必要があると思います。
 
-## 調べてみて思ったこと
+## まとめ：イブラヒムさんの炎上・失言を元情報まで確認した結果
 イブラヒムさんについては、実際に本人が謝罪した出来事があります。
 
 特に2021年のにじバラについては、企業や出演者への配慮が足りなかったことを本人も認めており、「炎上は全部デマだった」と説明するのは無理があります。

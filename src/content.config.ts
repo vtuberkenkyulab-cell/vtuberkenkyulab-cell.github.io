@@ -12,10 +12,17 @@ const correctionSchema = z.object({
   reason: z.string()
 });
 
+const verificationSchema = z.object({
+  topic: z.string(),
+  result: z.string(),
+  evidence: z.string()
+});
+
 const articles = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
     slug: z.string(),
     person: z.string(),
     personSlug: z.string(),
@@ -24,7 +31,9 @@ const articles = defineCollection({
     updatedAt: z.coerce.date(),
     checkedAt: z.coerce.date(),
     keyPoints: z.array(z.string()).min(2).max(5),
+    verificationSummary: z.array(verificationSchema).min(1).max(6).optional(),
     sources: z.array(sourceSchema),
+    relatedSlugs: z.array(z.string()).default([]),
     corrections: z.array(correctionSchema),
     featured: z.boolean().default(false),
     displayOrder: z.number().int().nonnegative().default(999),

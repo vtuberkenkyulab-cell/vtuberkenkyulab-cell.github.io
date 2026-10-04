@@ -13,20 +13,33 @@ interface Props { article: CollectionEntry<'articles'>; allArticles: CollectionE
 const { article, allArticles } = Astro.props;
 const { Content, headings } = await render(article);
 const canonical = new URL(sitePath(`/articles/${article.data.slug}/`), Astro.site);
+const image = new URL(sitePath(`/og/${article.data.slug}.png`), Astro.site);
 const related = allArticles.filter((item) => item.data.slug !== article.data.slug && item.data.personSlug === article.data.personSlug).slice(0,3);
-const fallbackRelated = related.length ? related : allArticles.filter((item) => item.data.slug !== article.data.slug).sort((a,b) => a.data.displayOrder - b.data.displayOrder).slice(0,3);
+const selectedRelated = article.data.relatedSlugs
+  .map((slug) => allArticles.find((item) => item.data.slug === slug))
+  .filter((item): item is CollectionEntry<'articles'> => Boolean(item));
+const fallbackRelated = selectedRelated.length
+  ? selectedRelated.slice(0, 3)
+  : related.length
+    ? related
+    : allArticles.filter((item) => item.data.slug !== article.data.slug).sort((a,b) => a.data.displayOrder - b.data.displayOrder).slice(0,3);
+const inlineSources = [...(article.body ?? '').matchAll(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g)].map((match) => ({ title: match[1], url: match[2] }));
+const allSources = [...article.data.sources, ...inlineSources].filter((source, index, sources) => sources.findIndex((item) => item.url === source.url) === index);
+const organizationUrl = new URL(sitePath('/about/'), Astro.site).href;
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: article.data.title,
+  headline: article.data.seoTitle ?? article.data.title,
   description: article.data.description,
   datePublished: article.data.publishedAt.toISOString(),
   dateModified: article.data.updatedAt.toISOString(),
-  author: { '@type': 'Organization', name: SITE_NAME },
-  publisher: { '@type': 'Organization', name: SITE_NAME },
+  author: { '@type': 'Organization', name: SITE_NAME, url: organizationUrl },
+  publisher: { '@type': 'Organization', name: SITE_NAME, url: new URL(sitePath('/'), Astro.site).href },
+  image: image.href,
   mainEntityOfPage: canonical.href,
   about: article.data.person,
-  inLanguage: 'ja'
+  inLanguage: 'ja',
+  citation: allSources.map((source) => source.url)
 };
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -38,7 +51,7 @@ const breadcrumbSchema = {
   ]
 };
 ---
-<BaseLayout title={article.data.title} description={article.data.description} canonical={canonical} type="article" jsonLd={[articleSchema, breadcrumbSchema]}>
+<BaseLayout title={article.data.seoTitle ?? article.data.title} description={article.data.description} canonical={canonical} type="article" jsonLd={[articleSchema, breadcrumbSchema]} image={image}>
   <div class="container article-shell">
     <article>
       <nav class="meta" aria-label="パンくず"><a href={sitePath('/')}>TOP</a><span>›</span><a href={sitePath('/articles/')}>記事一覧</a></nav>
@@ -55,10 +68,14 @@ const breadcrumbSchema = {
         <h2 id="key-points-title">この記事の要点</h2>
         <ul>{article.data.keyPoints.map((point) => <li>{point}</li>)}</ul>
       </section>
+      {article.data.verificationSummary?.length && <section class="verification-summary" aria-labelledby="verification-summary-title">
+        <h2 id="verification-summary-title">検証結果</h2>
+        <div class="table-wrap"><table><thead><tr><th>論点</th><th>確認結果</th><th>主な根拠</th></tr></thead><tbody>{article.data.verificationSummary.map((item) => <tr><th scope="row">{item.topic}</th><td>{item.result}</td><td>{item.evidence}</td></tr>)}</tbody></table></div>
+      </section>}
       <div class="prose"><Content /></div>
       <section class="sources" aria-labelledby="sources-title">
         <h2 id="sources-title">確認した主な資料</h2>
-        {article.data.sources.length ? <ol>{article.data.sources.map((source) => <li><a href={source.url} rel="noopener noreferrer">{source.title}</a></li>)}</ol> : <p>本文中に確認先が記載されています。</p>}
+        {allSources.length ? <ol>{allSources.map((source) => <li><a href={source.url} rel="noopener noreferrer">{source.title}</a></li>)}</ol> : <p>本文中に確認先が記載されています。</p>}
       </section>
       <section class="sources" aria-labelledby="corrections-title">
         <h2 id="corrections-title">訂正履歴</h2>

@@ -4,8 +4,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { formatDate, sitePath } from '../../lib/site';
 const [people, articles] = await Promise.all([getCollection('people'), getCollection('articles', ({ data }) => !data.draft)]);
 ---
-<BaseLayout title="人物一覧" description="本サイトで検証記事を掲載しているVTuber・配信者の一覧です。人物プロフィールではなく、記事を探すためのハブです。">
-  <header class="page-header"><div class="container"><p class="eyebrow">PEOPLE</p><h1>人物から探す</h1><p>人物ページは公式プロフィールではなく、本サイト内の検証記事をまとめるためのページです。</p></div></header>
+<BaseLayout title="にじさんじ人物別記事一覧" description="にじさんじ配信アーカイブ検証室で記事を掲載しているVTuber・配信者を五十音順で探せる一覧です。">
+  <header class="page-header"><div class="container"><p class="eyebrow">PEOPLE</p><h1>人物から探す</h1><p>にじさんじ所属VTuberの検証記事を五十音順で掲載しています。人物ページは公式プロフィールではなく、本サイト内の記事を探すためのページです。</p></div></header>
   <section class="section container"><div class="people-grid">
     {people.sort((a,b) => a.data.name.localeCompare(b.data.name, 'ja')).map((person) => {
       const related = articles.filter((article) => article.data.personSlug === person.data.slug);

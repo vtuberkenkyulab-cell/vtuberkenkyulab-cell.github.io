@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 const articles = (await getCollection('articles', ({ data }) => !data.draft)).sort((a,b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf() || a.data.person.localeCompare(b.data.person, 'ja'));
 ---
-<BaseLayout title="全記事一覧" description="配信アーカイブ検証室で公開しているVTuber・配信者の検証記事一覧です。">
+<BaseLayout title="にじさんじ検証記事一覧" description="にじさんじ配信アーカイブ検証室で公開している、元配信・本人投稿・公式情報を確認した全13件の検証記事一覧です。">
   <header class="page-header"><div class="container"><p class="eyebrow">ARTICLES</p><h1>全記事一覧</h1><p>公開日順に掲載しています。各記事は元配信・公式情報・本人発言など、確認できた資料を示しています。</p></div></header>
   <section class="section container"><div class="card-grid">{articles.map((article) => <ArticleCard article={article} />)}</div></section>
 </BaseLayout>
