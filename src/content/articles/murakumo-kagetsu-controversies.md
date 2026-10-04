@@ -30,8 +30,8 @@ sources:
     url: "https://www.anycolor.co.jp/en/news/hn1d6acch"
   - title: "Ragtag Archive"
     url: "https://archive.ragtag.moe/watch?v=YCiX_mS5Vzg"
-  - title: "東京オートスタイル"
-    url: "https://tokyoautostyle.jp/murakumo-kagetsu-controversy/"
+  - title: "LIFE BASKET"
+    url: "https://eriekiblog.com/nijisannjikagetu/"
   - title: "YouTube"
     url: "https://www.youtube.com/watch?v=I0hVC_HSOO0"
   - title: "t.co"
@@ -65,7 +65,7 @@ FPSを得意としており、デビュー後はゲーム大会やストリー�
 
 配信タイトルにも「1カ月前にデビューした新人さんとローレン」とあり、デビューからかなり早い段階での先輩とのコラボだったことが分かります。元配信のアーカイブ記録も残っています。 [Ragtag Archive](https://archive.ragtag.moe/watch?v=YCiX_mS5Vzg)
 
-この配信について、後年の二次記事では、ゲーム中の叢雲さんの言葉遣いや距離感を「りりむさんを見下しているように聞こえた」「新人として先輩への態度が強すぎる」と感じた視聴者が一部にいた、と紹介されています。 [東京オートスタイル](https://tokyoautostyle.jp/murakumo-kagetsu-controversy/)
+この配信について、後年の二次記事では、ゲーム中の叢雲さんの言葉遣いや距離感を「りりむさんを見下しているように聞こえた」「新人として先輩への態度が強すぎる」と感じた視聴者が一部にいた、と紹介されています。 [LIFE BASKET](https://eriekiblog.com/nijisannjikagetu/)
 
 そう感じた視聴者がいたこと自体は否定する必要はないと思います。
 
