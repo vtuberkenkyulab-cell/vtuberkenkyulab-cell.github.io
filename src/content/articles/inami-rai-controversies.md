@@ -8,6 +8,16 @@ description: "伊波ライさんの「炎上」「衣装パクリ」「謝罪」
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "💡"
+  illustrator: "深井涼介"
+  aliases: ["ライ", "伊波", "ライくん"]
+  age: "永遠の21歳"
+  birthday: "10月23日"
+  height: "169cm"
+  summary: "にじさんじ所属。機械いじりの技術を生かしてヒーローたちのメカニックを務め、自身もヒーローとして活動しています。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/rai-inami"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E4%BC%8A%E6%B3%A2%E3%83%A9%E3%82%A4"
 keyPoints:
   - "新衣装が渡会雲雀さんの衣装に似ているという議論は確認できましたが、公式や権利者が盗用と認定した資料は見つかりませんでした。"
   - "「戌亥とこさんへの謝罪」は、名前を「伊波どこ」と聞き間違えた配信上のエピソードでした。"

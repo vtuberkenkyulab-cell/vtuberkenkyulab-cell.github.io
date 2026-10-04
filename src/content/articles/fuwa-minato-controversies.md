@@ -8,6 +8,16 @@ description: "不破湊さんの「炎上」「やらかし」とされるSwitch
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "🥂✨"
+  illustrator: "とまつかぜ"
+  aliases: ["ふわっち", "不破くん", "不破さん"]
+  age: "永遠の28歳"
+  birthday: "4月18日"
+  height: "173cm"
+  summary: "にじさんじ所属。歌とゲームが大好きなバーチャルホストとして活動しています。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/minato-fuwa"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E4%B8%8D%E7%A0%B4%E6%B9%8A"
 keyPoints:
   - "Switch 2抽選では、知人の当選品を譲ってもらうという説明が抽選の公平性をめぐる批判につながりました。"
   - "2026年の「緊急記者会見」という告知は災害発生後の表現として批判され、本人は告知を取り下げて対応を変更しました。"

@@ -8,6 +8,16 @@ description: "小柳ロウさんの「炎上」「ガチ恋」とANYCOLORの注�
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "👻🔪"
+  illustrator: "スオウ"
+  aliases: ["ロウ", "小柳くん", "小柳ロウ"]
+  age: "不明（100歳以上）"
+  birthday: "11月25日"
+  height: "173cm"
+  summary: "にじさんじ所属。魔や妖を切る白狼の剣士で、裏では暗殺集団の首領というプロフィールです。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/rou-koyanagi"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E5%B0%8F%E6%9F%B3%E3%83%AD%E3%82%A6"
 keyPoints:
   - "2025年のANYCOLOR公式注意喚起は、小柳ロウさん本人への処分ではありませんでした。"
   - "注意喚起の対象は、小柳さんのコラボ相手へ攻撃や迷惑行為を行っていた一部の人物です。"

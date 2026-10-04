@@ -8,6 +8,16 @@ description: "皇れおさんの「炎上」「危険枠」「葛葉」とされ
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "👑🌸"
+  illustrator: "TAKUMI"
+  aliases: ["れお", "皇", "れおくん"]
+  age: "17歳"
+  birthday: "7月2日"
+  height: "172cm"
+  summary: "にじさんじ所属。ほしの学園2年生の17歳で、男子高校生アイドルグループ「すぷれあ」のリーダーです。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/reo-sumeragi"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E7%9A%87%E3%82%8C%E3%81%8A"
 keyPoints:
   - "「危険枠」の話は、デビュー前のプロフィールで憧れの先輩について書いた内容が運営に修正されたというエピソードが元でした。"
   - "葛葉さんらを敵意をもって危険人物扱いしたと断定できる資料は確認できませんでした。"

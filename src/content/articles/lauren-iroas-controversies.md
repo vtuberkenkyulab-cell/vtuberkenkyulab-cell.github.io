@@ -8,6 +8,16 @@ description: "ローレン・イロアスさんの著作物無断利用、不適
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "🗝💸"
+  illustrator: "ここかなた"
+  aliases: ["ローレン", "ロレ", "ローレンさん"]
+  age: "22歳（年齢は変わらない設定）"
+  birthday: "9月6日"
+  height: "176cm"
+  summary: "にじさんじ所属。陰謀が渦巻く街で都市警備部隊に所属する青年として紹介されています。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/lauren-iroas"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E3%83%AD%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%BB%E3%82%A4%E3%83%AD%E3%82%A2%E3%82%B9"
 keyPoints:
   - "2022年の著作物無断利用と不適切なネットスラングは、本人やANYCOLORが問題を認めて謝罪しています。"
   - "著作物無断利用後には活動自粛と権利者への対応が公式に説明されました。"

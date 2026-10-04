@@ -8,6 +8,16 @@ description: "叢雲カゲツさんの「炎上」や魔界ノりりむさんと
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "🥷🔫"
+  illustrator: "Lowro"
+  aliases: ["カゲツ", "カゲツくん", "忍者"]
+  age: "永遠の20歳"
+  birthday: "2月26日"
+  height: "169cm"
+  summary: "にじさんじ所属。人里離れた村の忍者集団のエースで、さまざまな武器を扱うヒーローです。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/kagetsu-murakumo"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E5%8F%A2%E9%9B%B2%E3%82%AB%E3%82%B2%E3%83%84"
 keyPoints:
   - "デビュー約1か月後のAPEXコラボで、叢雲カゲツさんの言葉遣いや距離感を失礼と感じた視聴者がいたことは確認できました。"
   - "魔界ノりりむさんとの不仲を裏づける公表はなく、その後も二人は複数回共演しています。"

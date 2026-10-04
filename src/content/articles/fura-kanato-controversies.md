@@ -8,6 +8,16 @@ description: "風楽奏斗さんの「炎上」「失言」「謝罪」という
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "🍝🍷"
+  illustrator: "えびら"
+  aliases: ["奏斗", "かなてぃー", "KNT", "かなっつ"]
+  age: "20歳（年齢は変わらない設定）"
+  birthday: "3月25日"
+  height: "177cm"
+  summary: "にじさんじ所属。マフィア一家の息子で、現在はカフェやレストランを経営する青年実業家として紹介されています。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/kanato-fura"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E9%A2%A8%E6%A5%BD%E5%A5%8F%E6%96%97"
 keyPoints:
   - "「炎上」は、本人の不祥事ではなくVTA時代の企画名「炎上シミュレーター」を指す検索結果が確認できました。"
   - "「謝罪」は、Steam福袋企画で対象商品が販売終了していたことを謝ったもので、重大な不祥事への謝罪ではありませんでした。"

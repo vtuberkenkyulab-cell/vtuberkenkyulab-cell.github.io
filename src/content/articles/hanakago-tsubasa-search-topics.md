@@ -8,6 +8,16 @@ description: "花籠つばささんの「炎上」「謝罪」「やらかし」
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "🧢🪽"
+  illustrator: "尾崎ドミノ"
+  aliases: ["つばさ", "ばっさー", "花ちゃん", "かごつば", "ごつば"]
+  age: "18歳"
+  birthday: "5月28日"
+  height: "178cm"
+  summary: "にじさんじ所属。大阪から転校してきた、ほしの学園3年生の18歳で、すぷれあのお兄ちゃん的存在です。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/tsubasa-hanakago"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E8%8A%B1%E7%B1%A0%E3%81%A4%E3%81%B0%E3%81%95"
 keyPoints:
   - "「謝罪」と題された動画は確認できましたが、内容は重大な不祥事への謝罪とは異なりました。"
   - "一部コラボへの批判を扱う二次情報はあるものの、本人やANYCOLORによる重大な問題への公式謝罪は確認できませんでした。"

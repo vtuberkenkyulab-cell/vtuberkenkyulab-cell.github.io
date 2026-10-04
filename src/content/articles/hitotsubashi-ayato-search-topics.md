@@ -8,6 +8,16 @@ description: "一橋綾人さんの「炎上」「やらかし」とされる配
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "📚🗣"
+  illustrator: "RIZ3"
+  aliases: ["一橋先生", "一橋さん", "綾人先生", "あやてぃー"]
+  age: "不詳（本人非公開）"
+  birthday: "12月8日"
+  height: "182cm"
+  summary: "にじさんじ所属。多くの患者を抱え、対話に日々努めるスーパーエリート精神科医として紹介されています。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/ayato-hitotsubashi"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E4%B8%80%E6%A9%8B%E7%B6%BE%E4%BA%BA"
 keyPoints:
   - "デビュー直後に配信画面へ情報を映し、アーカイブを一時非公開にした配信操作上の事故は確認できました。"
   - "確認した公開資料では、重大な失言を繰り返したことや周囲との継続的なトラブルは裏づけられませんでした。"

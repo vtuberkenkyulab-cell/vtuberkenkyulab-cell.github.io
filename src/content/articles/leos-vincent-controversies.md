@@ -8,6 +8,16 @@ description: "レオス・ヴィンセントさんの「炎上」「トレパク
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "🥼🌱😺"
+  illustrator: "丁嵐あたらよ（本人側では「スタイリスト」表記）"
+  aliases: ["レオス", "博士", "ヴィンさん", "レオ"]
+  age: "29歳（不老長生のため加齢しない設定）"
+  birthday: "3月8日"
+  height: "180cm"
+  summary: "にじさんじ所属。日々怪しい薬を研究し、研究室から爆発音が聞こえるというマッドサイエンティストです。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/leos-vincent"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E3%83%AC%E3%82%AA%E3%82%B9%E3%83%BB%E3%83%B4%E3%82%A3%E3%83%B3%E3%82%BB%E3%83%B3%E3%83%88"
 keyPoints:
   - "トレース問題では、レオス・ヴィンセントさん本人が描いたのではなく、第三者のファンアートを配信サムネイルに使用していました。"
   - "元作品の作者は、レオスさん本人に責任はないという趣旨を表明しています。"

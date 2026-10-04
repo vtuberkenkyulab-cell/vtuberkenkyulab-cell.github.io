@@ -18,6 +18,18 @@ const verificationSchema = z.object({
   evidence: z.string()
 });
 
+const profileSchema = z.object({
+  fanMark: z.string(),
+  illustrator: z.string(),
+  aliases: z.array(z.string()).min(1),
+  age: z.string(),
+  birthday: z.string(),
+  height: z.string(),
+  summary: z.string(),
+  officialUrl: z.string().url(),
+  referenceUrl: z.string().url()
+});
+
 const articles = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
   schema: z.object({
@@ -30,6 +42,7 @@ const articles = defineCollection({
     publishedAt: z.coerce.date(),
     updatedAt: z.coerce.date(),
     checkedAt: z.coerce.date(),
+    profile: profileSchema,
     keyPoints: z.array(z.string()).min(2).max(5),
     verificationSummary: z.array(verificationSchema).min(1).max(6).optional(),
     sources: z.array(sourceSchema),

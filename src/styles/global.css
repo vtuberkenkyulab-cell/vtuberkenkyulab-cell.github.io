@@ -63,6 +63,14 @@ h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: 0; max-width: 18ch; }
 .article-shell { display: grid; grid-template-columns: minmax(0, 46rem) 15rem; gap: 3.5rem; align-items: start; padding-top: 2.5rem; }
 .article-header h1 { max-width: none; font-size: clamp(1.8rem, 4vw, 2.8rem); }
 .article-meta { margin: 1rem 0 0; padding: 1rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.profile-card { margin: 2rem 0; padding: 1.4rem; border: 1px solid var(--line); border-radius: .7rem; background: linear-gradient(180deg, var(--accent-soft), #fff 72%); }
+.profile-card h2 { margin: 0 0 1rem; font-size: 1.35rem; }
+.profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.profile-grid div { min-width: 0; padding: .75rem .9rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.84); }
+.profile-grid dt { color: var(--muted); font-size: .8rem; font-weight: 700; }
+.profile-grid dd { margin: .15rem 0 0; overflow-wrap: anywhere; font-weight: 700; }
+.profile-summary { margin: 1rem 0 .35rem; }
+.profile-sources { margin: .35rem 0 0; color: var(--muted); font-size: .82rem; }
 .key-points { margin: 2rem 0; padding: 1.25rem 1.4rem; background: var(--soft); border-left: .25rem solid var(--accent); border-radius: 0 .5rem .5rem 0; }
 .key-points h2 { margin: 0 0 .6rem; font-size: 1.15rem; }
 .key-points ul { margin: 0; padding-left: 1.3rem; }
@@ -108,5 +116,6 @@ h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: 0; max-width: 18ch; }
   .card-grid, .people-grid { grid-template-columns: 1fr; }
   .section { padding-top: 2.7rem; }
   .article-shell { padding-top: 1.8rem; }
+  .profile-grid { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

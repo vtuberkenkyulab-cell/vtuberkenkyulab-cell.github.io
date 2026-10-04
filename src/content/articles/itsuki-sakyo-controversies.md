@@ -8,6 +8,16 @@ description: "五木左京さんの「炎上」「失言」とされるマリカ
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "💼📊"
+  illustrator: "カズキヨネ"
+  aliases: ["左京さん", "左京部長", "五木部長", "部長"]
+  age: "32歳（1994年1月25日生まれ）"
+  birthday: "1月25日"
+  height: "173cm"
+  summary: "にじさんじ所属。株式会社HAPPY LOVE ITで年間トップの営業成績を誇るスーパーエリートセールスマンです。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/sakyo-itsuki"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E4%BA%94%E6%9C%A8%E5%B7%A6%E4%BA%AC"
 keyPoints:
   - "批判につながった出来事として、2025年のマリカ杯同時視聴での発言と、2026年の熊本地震後に使った絵文字を確認しました。"
   - "五木左京さんは、言葉の表現や絵文字の選び方について本人の投稿で謝罪しています。"

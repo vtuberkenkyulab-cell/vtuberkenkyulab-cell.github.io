@@ -8,6 +8,16 @@ description: "城瀬いすみさんの「炎上」とされる「冬のはなし
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "🏰🍬"
+  illustrator: "DSマイル"
+  aliases: ["いすみゃ", "みゃ", "いすみ", "しろ"]
+  age: "15歳"
+  birthday: "12月23日"
+  height: "165cm"
+  summary: "にじさんじ所属。ほしの学園1年生の15歳で、すぷれあ最年少。かわいいものや甘いものが大好きです。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/isumi-shirose"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E5%9F%8E%E7%80%AC%E3%81%84%E3%81%99%E3%81%BF"
 keyPoints:
   - "「冬のはなし」の歌ってみたに対して一部で批判があったことは確認できました。"
   - "動画のイラストは『ギヴン』原作者のキヅナツキさん本人が担当し、本人側からも告知されています。"

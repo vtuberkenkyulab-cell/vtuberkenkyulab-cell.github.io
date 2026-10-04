@@ -24,7 +24,11 @@ const fallbackRelated = selectedRelated.length
     ? related
     : allArticles.filter((item) => item.data.slug !== article.data.slug).sort((a,b) => a.data.displayOrder - b.data.displayOrder).slice(0,3);
 const inlineSources = [...(article.body ?? '').matchAll(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g)].map((match) => ({ title: match[1], url: match[2] }));
-const allSources = [...article.data.sources, ...inlineSources].filter((source, index, sources) => sources.findIndex((item) => item.url === source.url) === index);
+const profileSources = [
+  { title: `にじさんじ公式プロフィール（${article.data.person}）`, url: article.data.profile.officialUrl },
+  { title: `にじさんじ非公式Wiki（${article.data.person}）`, url: article.data.profile.referenceUrl }
+];
+const allSources = [...article.data.sources, ...profileSources, ...inlineSources].filter((source, index, sources) => sources.findIndex((item) => item.url === source.url) === index);
 const organizationUrl = new URL(sitePath('/about/'), Astro.site).href;
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -37,7 +41,13 @@ const articleSchema = {
   publisher: { '@type': 'Organization', name: SITE_NAME, url: new URL(sitePath('/'), Astro.site).href },
   image: image.href,
   mainEntityOfPage: canonical.href,
-  about: article.data.person,
+  about: {
+    '@type': 'Person',
+    name: article.data.person,
+    alternateName: article.data.profile.aliases,
+    description: article.data.profile.summary,
+    url: article.data.profile.officialUrl
+  },
   inLanguage: 'ja',
   citation: allSources.map((source) => source.url)
 };
@@ -64,6 +74,19 @@ const breadcrumbSchema = {
           <span>最終確認日 {formatDate(article.data.checkedAt)}</span>
         </div>
       </header>
+      <section class="profile-card" aria-labelledby="profile-title">
+        <h2 id="profile-title">{article.data.person}のプロフィール</h2>
+        <dl class="profile-grid">
+          <div><dt>ファンマーク</dt><dd>{article.data.profile.fanMark}</dd></div>
+          <div><dt>担当イラストレーター（通称ママ）</dt><dd>{article.data.profile.illustrator}</dd></div>
+          <div><dt>主な呼び方・愛称</dt><dd>{article.data.profile.aliases.join('、')}</dd></div>
+          <div><dt>年齢</dt><dd>{article.data.profile.age}</dd></div>
+          <div><dt>誕生日</dt><dd>{article.data.profile.birthday}</dd></div>
+          <div><dt>身長</dt><dd>{article.data.profile.height}</dd></div>
+        </dl>
+        <p class="profile-summary">{article.data.profile.summary}</p>
+        <p class="profile-sources">出典：<a href={article.data.profile.officialUrl} rel="noopener noreferrer">にじさんじ公式プロフィール</a>／<a href={article.data.profile.referenceUrl} rel="noopener noreferrer">公開プロフィール情報の補助資料</a>（最終確認日 {formatDate(article.data.checkedAt)}）</p>
+      </section>
       <section class="key-points" aria-labelledby="key-points-title">
         <h2 id="key-points-title">この記事の要点</h2>
         <ul>{article.data.keyPoints.map((point) => <li>{point}</li>)}</ul>

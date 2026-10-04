@@ -8,6 +8,16 @@ description: "イブラヒムさんの「炎上」「失言」「謝罪」とさ
 publishedAt: 2026-10-04
 updatedAt: 2026-10-04
 checkedAt: 2026-10-04
+profile:
+  fanMark: "💧"
+  illustrator: "犬月煙"
+  aliases: ["イブラヒム", "イブ", "イブくん", "イブちゃん"]
+  age: "28歳（1998年7月25日生まれ）"
+  birthday: "7月25日"
+  height: "177cm"
+  summary: "にじさんじ所属。石油の価値が下がった後、偶然掘り当てた温泉で生計を立てる元石油王として紹介されています。"
+  officialUrl: "https://www.nijisanji.jp/talents/l/ibrahim"
+  referenceUrl: "https://wikiwiki.jp/nijisanji/%E3%82%A4%E3%83%96%E3%83%A9%E3%83%92%E3%83%A0"
 keyPoints:
   - "2021年の「にじさんじのB級バラエティ」では、企業や出演者への配慮不足を本人が認めて謝罪しました。"
   - "手越祐也さんとのVALORANT動画は、ANYCOLORが制作フロー上の問題を説明し、イブラヒムさんにも謝罪しています。"
