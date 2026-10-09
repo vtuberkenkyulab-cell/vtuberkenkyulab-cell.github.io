@@ -6,8 +6,8 @@ person: "イブラヒム"
 personSlug: "ibrahim"
 description: "イブラヒムさんの「炎上」「失言」「謝罪」とされる出来事について、本人の謝罪、ANYCOLORの説明、元配信の確認状況を分けて整理した記事です。"
 publishedAt: 2026-10-04
-updatedAt: 2026-10-04
-checkedAt: 2026-10-04
+updatedAt: 2026-10-09
+checkedAt: 2026-10-09
 profile:
   fanMark: "💧"
   illustrator: "犬月煙"
@@ -42,6 +42,8 @@ sources:
     url: "https://www.anycolor.co.jp/en/news/13359"
   - title: "ANYCOLOR MAGAZINE にじバラ5周年座談会"
     url: "https://magazine.anycolor.co.jp/articles/899806582"
+  - title: "ねとらぼ（手越祐也さんとの動画に関するANYCOLOR発表全文）"
+    url: "https://nlab.itmedia.co.jp/cont/articles/3334918/3/"
 corrections: []
 featured: true
 displayOrder: 3

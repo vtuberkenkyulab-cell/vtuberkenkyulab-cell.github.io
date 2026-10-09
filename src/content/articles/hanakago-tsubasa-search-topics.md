@@ -6,8 +6,8 @@ person: "花籠つばさ"
 personSlug: "hanakago-tsubasa"
 description: "花籠つばささんの「炎上」「謝罪」「やらかし」とされる話について、動画の文脈や公式情報を確認し、重大な問題があったのか整理した記事です。"
 publishedAt: 2026-10-04
-updatedAt: 2026-10-04
-checkedAt: 2026-10-04
+updatedAt: 2026-10-09
+checkedAt: 2026-10-09
 profile:
   fanMark: "🧢🪽"
   illustrator: "尾崎ドミノ"
@@ -38,6 +38,12 @@ relatedSlugs:
 sources:
   - title: "にじさんじ公式プロフィール"
     url: "https://www.nijisanji.jp/talents/l/tsubasa-hanakago"
+  - title: "ANYCOLOR公式 すぷれあデビュー発表"
+    url: "https://www.anycolor.co.jp/news/nhwksr-go90w"
+  - title: "ANYCOLOR MAGAZINE すぷれあ1周年インタビュー"
+    url: "https://magazine.anycolor.co.jp/articles/99106745"
+  - title: "本人動画『小柳ロウさんに槍を投げられる花籠つばさ』"
+    url: "https://youtube.com/shorts/O33KnIg7P5Y"
 corrections: []
 featured: false
 displayOrder: 109

@@ -6,8 +6,8 @@ person: "皇れお"
 personSlug: "sumera-reo"
 description: "皇れおさんの「炎上」「危険枠」「葛葉」とされる話について、元のプロフィール作成エピソードと公開情報を確認して整理した記事です。"
 publishedAt: 2026-10-04
-updatedAt: 2026-10-04
-checkedAt: 2026-10-04
+updatedAt: 2026-10-09
+checkedAt: 2026-10-09
 profile:
   fanMark: "👑🌸"
   illustrator: "TAKUMI"
@@ -39,6 +39,10 @@ relatedSlugs:
 sources:
   - title: "にじさんじオフィシャルストア 皇れお"
     url: "https://shop.nijisanji.jp/1176"
+  - title: "ANYCOLOR公式 すぷれあデビュー発表"
+    url: "https://www.anycolor.co.jp/news/nhwksr-go90w"
+  - title: "ANYCOLOR MAGAZINE すぷれあ1周年インタビュー"
+    url: "https://magazine.anycolor.co.jp/articles/99106745"
 corrections: []
 featured: false
 displayOrder: 111

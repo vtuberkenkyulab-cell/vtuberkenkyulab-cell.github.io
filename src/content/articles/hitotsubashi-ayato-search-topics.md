@@ -6,8 +6,8 @@ person: "一橋綾人"
 personSlug: "hitotsubashi-ayato"
 description: "一橋綾人さんの「炎上」「やらかし」とされる配信事故や五木左京さんとの関係について、公開配信と公式情報を確認して整理した記事です。"
 publishedAt: 2026-10-04
-updatedAt: 2026-10-04
-checkedAt: 2026-10-04
+updatedAt: 2026-10-09
+checkedAt: 2026-10-09
 profile:
   fanMark: "📚🗣"
   illustrator: "RIZ3"
@@ -41,6 +41,8 @@ sources:
     url: "https://magazine.anycolor.co.jp/articles/737955796"
   - title: "ANYCOLOR MAGAZINE えりぶりマネージャー対談"
     url: "https://magazine.anycolor.co.jp/articles/161067314"
+  - title: "ANYCOLOR公式 一橋綾人・五木左京デビュー発表"
+    url: "https://www.anycolor.co.jp/news/fzahe-x5dzy"
 corrections: []
 featured: false
 displayOrder: 108

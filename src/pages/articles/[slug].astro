@@ -28,7 +28,8 @@ const profileSources = [
   { title: `にじさんじ公式プロフィール（${article.data.person}）`, url: article.data.profile.officialUrl },
   { title: `にじさんじ非公式Wiki（${article.data.person}）`, url: article.data.profile.referenceUrl }
 ];
-const allSources = [...article.data.sources, ...profileSources, ...inlineSources].filter((source, index, sources) => sources.findIndex((item) => item.url === source.url) === index);
+const mainSources = [...article.data.sources, ...profileSources].filter((source, index, sources) => sources.findIndex((item) => item.url === source.url) === index);
+const allSources = [...mainSources, ...inlineSources].filter((source, index, sources) => sources.findIndex((item) => item.url === source.url) === index);
 const organizationUrl = new URL(sitePath('/about/'), Astro.site).href;
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -98,7 +99,7 @@ const breadcrumbSchema = {
       <div class="prose"><Content /></div>
       <section class="sources" aria-labelledby="sources-title">
         <h2 id="sources-title">確認した主な資料</h2>
-        {allSources.length ? <ol>{allSources.map((source) => <li><a href={source.url} rel="noopener noreferrer">{source.title}</a></li>)}</ol> : <p>本文中に確認先が記載されています。</p>}
+        {mainSources.length ? <ol>{mainSources.map((source) => <li><a href={source.url} rel="noopener noreferrer">{source.title}</a></li>)}</ol> : <p>本文中に確認先が記載されています。</p>}
       </section>
       <section class="sources" aria-labelledby="corrections-title">
         <h2 id="corrections-title">訂正履歴</h2>

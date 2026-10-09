@@ -6,8 +6,8 @@ person: "城瀬いすみ"
 personSlug: "shirose-isumi"
 description: "城瀬いすみさんの「炎上」とされる「冬のはなし」歌ってみたについて、動画クレジットと原作者・キヅナツキさんの発信から検証した記事です。"
 publishedAt: 2026-10-04
-updatedAt: 2026-10-04
-checkedAt: 2026-10-04
+updatedAt: 2026-10-09
+checkedAt: 2026-10-09
 profile:
   fanMark: "🏰🍬"
   illustrator: "DSマイル"
@@ -38,6 +38,12 @@ relatedSlugs:
 sources:
   - title: "にじさんじオフィシャルストア 城瀬いすみ"
     url: "https://shop.nijisanji.jp/dig-w-00018.html"
+  - title: "ANYCOLOR公式 すぷれあデビュー発表"
+    url: "https://www.anycolor.co.jp/news/nhwksr-go90w"
+  - title: "ANYCOLOR MAGAZINE すぷれあ1周年インタビュー"
+    url: "https://magazine.anycolor.co.jp/articles/99106745"
+  - title: "本人歌唱動画『冬のはなし』"
+    url: "https://www.youtube.com/watch?v=lA5DqdRSnJw"
 corrections: []
 featured: false
 displayOrder: 110

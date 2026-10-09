@@ -6,8 +6,8 @@ person: "不破湊"
 personSlug: "fuwa-minato"
 description: "不破湊さんの「炎上」「やらかし」とされるSwitch 2抽選や緊急記者会見の告知について、本人の説明と公開情報を確認して整理した記事です。"
 publishedAt: 2026-10-04
-updatedAt: 2026-10-04
-checkedAt: 2026-10-04
+updatedAt: 2026-10-09
+checkedAt: 2026-10-09
 profile:
   fanMark: "🥂✨"
   illustrator: "とまつかぜ"
@@ -37,6 +37,10 @@ sources:
     url: "https://www.nijisanji.jp/talents/l/minato-fuwa"
   - title: "J-CASTニュース（Switch 2抽選）"
     url: "https://www.j-cast.com/2025/04/25503822.html?p=all"
+  - title: "本人による緊急記者会見配信"
+    url: "https://www.youtube.com/watch?v=PADUsZmvi-w"
+  - title: "ユーチュラ（緊急記者会見の告知変更）"
+    url: "https://yutura.net/news/archives/163639"
 corrections: []
 featured: true
 displayOrder: 1

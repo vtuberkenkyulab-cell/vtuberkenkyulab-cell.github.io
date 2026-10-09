@@ -6,8 +6,8 @@ person: "五木左京"
 personSlug: "itsuki-sakyo"
 description: "五木左京さんの「炎上」「失言」とされるマリカ杯同時視聴での発言と熊本地震後の投稿について、元配信・本人投稿・公式情報から検証した記事です。"
 publishedAt: 2026-10-04
-updatedAt: 2026-10-04
-checkedAt: 2026-10-04
+updatedAt: 2026-10-09
+checkedAt: 2026-10-09
 profile:
   fanMark: "💼📊"
   illustrator: "カズキヨネ"
@@ -42,31 +42,17 @@ relatedSlugs:
 sources:
   - title: "にじさんじ公式サイト"
     url: "https://www.nijisanji.jp/talents/l/sakyo-itsuki"
-  - title: "公式ストア"
-    url: "https://shop.nijisanji.jp/1168"
   - title: "マリオカート杯同時視聴配信"
     url: "https://www.youtube.com/watch?v=nIQmBHTKGuY"
-  - title: "不破さんについて話している部分"
-    url: "https://www.youtube.com/watch?v=nIQmBHTKGuY&t=4525s"
-  - title: "参加者全体への思いを話している部分"
-    url: "https://www.youtube.com/watch?v=nIQmBHTKGuY&t=15725s"
-  - title: "賞金の話を交えて大会を評価している部分"
-    url: "https://www.youtube.com/watch?v=nIQmBHTKGuY&t=15829s"
   - title: "当初の投稿"
     url: "https://x.com/Itsuki_Sakyo/status/2082030918370574359"
   - title: "本人による謝罪"
     url: "https://x.com/Itsuki_Sakyo/status/2082649039376617663"
-  - title: "謝罪の続き"
-    url: "https://x.com/Itsuki_Sakyo/status/2082649040983113755"
-  - title: "再発防止についての投稿"
-    url: "https://x.com/Itsuki_Sakyo/status/2082649042409206119"
   - title: "ニュース記事"
     url: "https://news.allabout.co.jp/articles/o/125333/"
-  - title: "「紹介アポくださいっ！」の対談"
-    url: "https://www.youtube.com/watch?v=eGVtXlQFDIM"
-  - title: "公式インタビュー"
+  - title: "ANYCOLOR MAGAZINE 一橋綾人×五木左京対談"
     url: "https://magazine.anycolor.co.jp/articles/737955796"
-  - title: "公式インタビュー"
+  - title: "ANYCOLOR MAGAZINE えりぶりマネージャー対談"
     url: "https://magazine.anycolor.co.jp/articles/161067314"
 corrections: []
 featured: false
